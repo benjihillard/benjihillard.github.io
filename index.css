@@ -1,16 +1,24 @@
 /* Global Styles */
-
-
+html {
+    font-size: 16px;
+}
 
 body {
     margin: 0;
 
-    color: #222;
-    letter-spacing: 0;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 0.7;
 }
+
+@media screen and (max-width: 768px) {
+    html {
+      font-size: 14px; /* Smaller base font size for mobile */
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    html {
+      font-size: 16px; /* Larger base font size for larger screens */
+    }
+  }
 
 /* Fonts*/
 
@@ -29,8 +37,7 @@ body {
     font-style: normal;
   }
 
-  /* padding */
-  /* Flexbox Container */
+  /* Layout */
   .flex-container {
     display: flex;
     align-items: center;
@@ -47,8 +54,7 @@ body {
     flex: 70;
   }
 
-/* Utilities */
-
+  /* Utilities */
   .hide-on-mobile {
     display: initial;
   }
@@ -65,21 +71,39 @@ body {
   }
 
   .padding {
-    padding: 15px;
+    padding: 1rem;
   }
 
   .underline:hover {
     text-decoration: underline;
   }
 
+  /* Components */
   .circle {
     border-radius: 100%;
     background-color: #f62731;
-    width: 13px;
-    height: 13px;
-    padding: 15px;
-    margin-left: 10px;
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 1rem;
+    margin-left: 2.5rem;
   }
+
+  .spacer {
+    width: 100%;
+    height: 5.5rem;
+  }
+  
+  .bottom-liner {
+    height: 5px;
+    width: 100%;
+    border-bottom: black 2px solid;
+  }
+  /*
+    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0.7;
+  */
 
   
 
