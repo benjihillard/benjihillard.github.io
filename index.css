@@ -89,6 +89,12 @@ body {
     width: 100%;
     height: 5.5rem;
   }
+
+  @media screen and (max-width: 768px) {
+    .spacer {
+        height: 3.5rem;
+    }
+  }
   
   .bottom-liner {
     height: 5px;
