@@ -10,13 +10,13 @@ body {
 
 @media screen and (max-width: 768px) {
     html {
-      font-size: 14px; /* Smaller base font size for mobile */
+      font-size: 12px;
     }
   }
   
   @media screen and (min-width: 1200px) {
     html {
-      font-size: 16px; /* Larger base font size for larger screens */
+      font-size: 16px;
     }
   }
 
